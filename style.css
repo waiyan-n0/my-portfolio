@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Noto+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Orbitron:wght@400..900&display=swap');
+body {
+  font-family: 'Inter', 'Roboto', 'Open Sans', 'Noto Sans', 'Ubuntu', ui-sans-serif, system-ui, sans-serif;
+  cursor: url('shuttlecock.svg'), auto;
+}
+
+.titleGap{
+  margin-bottom: 1rem;
+}
+
+.navZoom {
+  transition: transform .2s;
+}
+.navZoom:hover{
+  transform: scale(1.5);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}   
+
+.cursor::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.fade{
+    animation: fade 1s ease-in forwards;
+    opacity: 0;
+}
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.slide{
+    animation: slideIn 1s ease-in forwards;
+    opacity: 0;
+}
+@keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.child-scroll{
+    animation: scrollAnimation 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0%;
+}
+@keyframes scrollAnimation {
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+
+
+

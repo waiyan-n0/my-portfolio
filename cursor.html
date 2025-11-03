@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor testing</title>
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="cursor.js">
+</head>
+<body>
+    <div class="cursor"></div>
+    <section id="skills" class="flex flex-col space-y-1.5 fade">
+  <div class="title inline-block font-bold text-3xl opacity-80">Skills</div>
+  <div class="skills-grid w-full sm:w-[45%] md:w-[30%] lg:w-[20%] space-y-1.5 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Python</div>
+    <div class="skill">Java</div>
+    <div class="skill">C++</div>
+    <div class="skill">C#</div>
+  </div>
+</section>
+
+<style>
+  .skill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: black;
+    color: white;
+    opacity: 0;
+    transform: scale(0.8) rotate(10deg);
+    animation: appear 0.8s ease-out forwards;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.2) rotate(-30deg) translateY(20px);
+      filter: blur(10px);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1.05) rotate(2deg) translateY(0);
+      filter: blur(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+
+  .skill:nth-child(1) { animation-delay: 0.1s; }
+  .skill:nth-child(2) { animation-delay: 0.2s; }
+  .skill:nth-child(3) { animation-delay: 0.3s; }
+  .skill:nth-child(4) { animation-delay: 0.4s; }
+  .skill:nth-child(5) { animation-delay: 0.5s; }
+  .skill:nth-child(6) { animation-delay: 0.6s; }
+  .skill:nth-child(7) { animation-delay: 0.7s; }
+  .skill:nth-child(8) { animation-delay: 0.8s; }
+
+
+  #skills.fade {
+    opacity: 0;
+    animation: blockFade 1s ease forwards;
+    animation-delay: 0.2s;
+  }
+
+  @keyframes blockFade {
+    from { opacity: 0; filter: blur(10px); }
+    to { opacity: 1; filter: blur(0); }
+  }
+</style>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            //console.log(e)
+            cursor.setAttribute("style", "top:"+(e.pageY-10 )+"px; left:"+(e.pageX-10)+"px;")
+        });
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500);
+        });
+    </script>
+</body>
+</html>

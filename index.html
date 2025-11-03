@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wai Yan Naing | </title>
+  <link href="style.css" rel="stylesheet" >
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="mx-auto max-w-5xl px-6 antialiased bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300 min-h-auto">
+
+  <div class="cursor"></div>
+
+  <nav class="fixed flex flex-row z-50 left-1/2 -translate-x-1/2 bottom-4 space-x-4 supports-backdrop-blur:bg-white/30 backdrop-blur-md dark:bg-gray-900/30 border rounded-2xl p-4 lg:w-16 lg:flex-col lg:p-3 lg:border lg:rounded-2xl lg:bottom-auto lg:left-4 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-0 lg:space-y-4">
+
+    <div id="moon" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a id="themeToggle">
+          <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-moon" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+          </svg>
+        </a>
+      </div>
+      <div id="translate" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a id="translateToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-translate" viewBox="0 0 16 16">
+            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+          </svg>
+        </a>
+      </div>
+      <div id="divider1" class="flex justify-center border border-gray-300 dark:border-gray-600"></div>
+      <div id="github" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a href="https://github.com/waiyan-n0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </a>
+      </div>
+      <div id="facebook" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a href="https://www.facebook.com/share/16Jq6VHQLM/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+          </svg>
+        </a>
+      </div>
+      <div id="gmail" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a href="mailto:waiyann025674@gmail.com?subject=Hello&body=Hi%20Wai%20Yan%20Naing," target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-chat-square-dots" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>
+        </a>
+      </div>
+      <div id="divider2" class="flex justify-center border border-gray-300 dark:border-gray-600"></div>
+      <div id="linkedin" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <a href="https://www.linkedin.com/in/waiyan-naing-355224272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+      </div>
+      <div id="downloadCV" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="navZoom bi bi-file-earmark-person" viewBox="0 0 16 16">
+          <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+        </svg>
+      </div>
+  </nav>
+
+  <main class="scroll flex min-h-auto flex-col space-y-10 mb-10 ">
+    <section id="wyn" class="flex w-auto h-auto fade">
+      <div class="flex w-full items-center justify-between "> 
+        <div class="flex flex-[3] flex-col space-y-1.5 max-w-[900px] pr-10">
+          <div class="title w-auto inline-block font-bold text-3xl tracking-tighter sm:text-5xl xl:text-5xl/none" data-i18n="greeting" id="typing-text"><!-- go to json file--></div>
+          <div class="md:text-xl opacity-70" data-i18n="caption"><!-- go to json file--></div>
+        </div>
+        <div class="flex flex-[1] justify-center justify-end">
+          <img src="pixelated-pf.png" alt="dev-pf" class="w-1/3 md:w-1/3 lg:w-1/4 object-contain" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutme" class="flex flex-col space-y-1.5 fade">
+      <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80" data-i18n="titleAboutMe">About Me</div>
+      <div data-i18n="pAboutMe">
+        <!-- go to json file-->
+      </div>
+    </section>
+
+    <section id="education" class="flex flex-col space-y-1.5 fade">
+      <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80" data-i18n="titleEdu">Education</div>
+      <div class="text-card-foreground flex">
+        <div class="flex-none"><img src="Logo_ucst-no-bg.png" alt="uni-img" class="w-20"></div>
+        <div class="group p-2 flex-grow flex-col items-center">
+          <div class="flex justify-between font-semibold tracking-tighter">
+            <span>UCSTGO</span>
+            <span data-i18n="pEduYear">March 2022 - </span>
+          </div>
+          <div class="font-semibold opacity-70" data-i18n="pEdu">University Of Computer Studies (Taungoo)</div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="skills" class="flex flex-col space-y-1.5 fade">
+      <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80">Skills</div>
+      <div class="w-full sm:w-[45%] md:w-[30%] lg:w-[20%] space-y-1.5 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">HTML5</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">CSS</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">JavaScripts</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">React</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">Python</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">Java</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">C++</div>
+          <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">C # </div>
+      </div>
+    </section>
+    <section id="recent-project" class="child-scroll flex flex-col space-y-1.5 fade-in">
+      <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80 py-1">Recent Project</div>
+      <div class="project-card flex justify-between gap-2 py-1 shadow-md hover:shadow-2xl transition-shadow duration-300 dark:border-gray-600 rounded-lg">
+        <a href="https://waiyanjourney.netlify.app/">
+          <div class="flex justify-center items-center p-2 dark:border-gray-700 w-fit">
+            <img src="lovenote-removebg-preview.png" alt="love-note" class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-lg" loading="lazy">
+          </div>
+        </a>
+        <div class="flex flex-col space-y-1.5 flex-grow">
+          <div class="flex w-full space-x-4"><h3 class="font-bold text-l sm:text-l opacity-80">Anniversary Counter</h3><div><span class="inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">python</span></div></div>
+          <div><p>Personal website for my anniversary date using pure html, css, and javascript. Credit to 'https://guoqi.dev/' </p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

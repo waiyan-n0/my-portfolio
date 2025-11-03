@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    height: 100vh;
+    cursor: url('shuttlecock.svg'), auto;
+}
+
+.cursor{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}   
+
+.cursor::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        text-replace: scale(5);
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(50,50,50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fade 2s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
