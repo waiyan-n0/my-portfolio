@@ -1,5 +1,7 @@
 # My Portfolio 🌱
 
+It would better if you check and suggest some information -> https://waiyannaing-portfolio.netlify.app/
+
 This is my personal portfolio website built to showcase my skills, projects, and learning journey as a **Computer Science student**.
 
 ⚠️ **Note:** This project is **still under development** and **not fully polished yet**.  
