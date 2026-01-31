@@ -11,7 +11,7 @@
 
   <div class="cursor"></div>
 
-  <nav class="fixed flex flex-row z-50 left-1/2 -translate-x-1/2 bottom-4 space-x-4 supports-backdrop-blur:bg-white/30 backdrop-blur-md dark:bg-gray-900/30 border rounded-2xl p-4 lg:w-16 lg:flex-col lg:p-3 lg:border lg:rounded-2xl lg:bottom-auto lg:left-4 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-0 lg:space-y-4">
+  <nav id="navbar" class="nav-visible fixed flex flex-row z-50 left-1/2 -translate-x-1/2 bottom-4 space-x-4 supports-backdrop-blur:bg-white/30 backdrop-blur-md dark:bg-gray-900/30 border rounded-2xl p-4 lg:w-16 lg:flex-col lg:p-3 lg:border lg:rounded-2xl lg:bottom-auto lg:left-4 lg:top-1/2 lg:-translate-y-1/2 lg:space-x-0 lg:space-y-4">
 
     <div id="moon" class="flex aspect-square cursor-pointer items-center justify-center rounded-full">
         <a id="themeToggle">
@@ -132,18 +132,14 @@
         </div>
       </div>
     </section>
-    <footer class="footer-scroll-fade mb-10  flex flex-col items-center space-y-4">
-      <div class="text-3xl font-bold">Get in touch</div>
-      <div class="opacity-70">Design & Built by WaiYanNaing</div>
-      <div id="star-box" class="w-auto flex cursor-pointer gap-2">
-        <svg id="star-svg"class="flex-shrink-0 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-width="2" d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z"/>
-        </svg>
-        <div id="star-count" class="font-semibold text-sm text-center text-gray-700 dark:text-gray-300">0</div>
-      </div>
-      <div class="opacity-70 ">&copy; waiyannaing. All rights reversed.</div>
-  </footer>
   </main>
+  <footer class="footer-scroll-fade mb-10  flex flex-col items-center space-y-4">
+      <div class="w-full border-t border-gray-300 dark:border-gray-600"></div>
+      <div class="w-full flex flex-row items-center justify-between opacity-70">
+        <div class="">Design & Built by &lt;WaiYanNaing/&gt;</div>
+        <div>&copy; waiyannaing. All rights reserved.</div>
+      </div>
+  </footer>
   
   <script src="script.js"></script>
 </body>

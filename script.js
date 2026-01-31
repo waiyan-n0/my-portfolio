@@ -145,30 +145,31 @@ async function startTypingEffect(lang = 'en') {
   }
 }
 
-const starBox = document.getElementById('star-box');
-const starCount = document.getElementById('star-count');
-const starSvg = starBox.querySelector('svg');
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.getElementById("navbar");
+  let timer;
 
-let totalStars = parseInt(localStorage.getItem('totalStars')) || 0;
-let hasStarred = localStorage.getItem('hasStarred') === 'true';
+  const HIDE_DELAY = 1000;
 
-starCount.textContent = totalStars;
+  function showNav() {
+    navbar.classList.remove("nav-hidden");
+    navbar.classList.add("nav-visible");
+  }
 
-if (hasStarred) {
-  starSvg.classList.add('starred');
-  starBox.style.cursor = 'default';
-}
+  function hideNav() {
+    navbar.classList.remove("nav-visible");
+    navbar.classList.add("nav-hidden");
+  }
 
-starBox.addEventListener('click', () => {
-  if (hasStarred) return;
-
-  totalStars++;
-  localStorage.setItem('totalStars', totalStars);
-  starCount.textContent = totalStars;
-
-  hasStarred = true;
-  localStorage.setItem('hasStarred', 'true');
-
-  starSvg.classList.add('starred');
-  starBox.style.cursor = 'default';
+  function resetTimer() {
+    showNav();
+    clearTimeout(timer);
+    timer = setTimeout(hideNav, HIDE_DELAY);
+  }
+  window.addEventListener("scroll", resetTimer);
+  window.addEventListener("mousemove", resetTimer);
+  window.addEventListener("touchstart", resetTimer);
+  
+  resetTimer();
 });
+
