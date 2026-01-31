@@ -87,21 +87,21 @@
       </div>
     </section>
 
-    <section id="education" class="flex flex-col space-y-1.5 fade">
+    <section id="education" class="flex flex-col space-y-1.5 fade-in">
       <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80" data-i18n="titleEdu">Education</div>
       <div class="text-card-foreground flex">
         <div class="flex-none"><img src="Logo_ucst-no-bg.png" alt="uni-img" class="w-20"></div>
         <div class="group p-2 flex-grow flex-col items-center">
           <div class="flex justify-between font-semibold tracking-tighter">
             <span>UCSTGO</span>
-            <span data-i18n="pEduYear">March 2022 - </span>
+            <span data-i18n="pEduYear"><!-- go to json file --></span>
           </div>
-          <div class="font-semibold opacity-70" data-i18n="pEdu">University Of Computer Studies (Taungoo)</div>
+          <div class="font-semibold opacity-70" data-i18n="pEdu"><!-- go to json file --></div>
         </div>
       </div>
     </section>
  
-    <section id="skills" class="flex flex-col space-y-1.5 fade">
+    <section id="skills" class="flex flex-col space-y-1.5 fade-in child-scroll">
       <div class="title inline-block font-bold text-3xl sm:text-l xl:text-3xl/none opacity-80">Skills</div>
       <div class="w-full sm:w-[45%] md:w-[30%] lg:w-[20%] space-y-1.5 grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
           <div class="skill inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">HTML5</div>
@@ -128,11 +128,23 @@
             <div><span class="inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">CSS</span></div>
             <div><span class="inline-flex items-center rounded-md px-2.5 py-1 text-xs font-semibold bg-black text-white hover:opacity-70 dark:bg-white dark:text-black">JavaScript</span></div>
           </div>
-          <div><p>Personal website for my anniversary date using pure html, css, and javascript. Credit to 'https://guoqi.dev/' </p></div>
+          <div><p>Personal website for my anniversary using pure html, css, and javascript. Credit to 'https://guoqi.dev/' </p></div>
         </div>
       </div>
     </section>
+    <footer class="footer-scroll-fade mb-10  flex flex-col items-center space-y-4">
+      <div class="text-3xl font-bold">Get in touch</div>
+      <div class="opacity-70">Design & Built by WaiYanNaing</div>
+      <div id="star-box" class="w-auto flex cursor-pointer gap-2">
+        <svg id="star-svg"class="flex-shrink-0 w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-width="2" d="M11.083 5.104c.35-.8 1.485-.8 1.834 0l1.752 4.022a1 1 0 0 0 .84.597l4.463.342c.9.069 1.255 1.2.556 1.771l-3.33 2.723a1 1 0 0 0-.337 1.016l1.03 4.119c.214.858-.71 1.552-1.474 1.106l-3.913-2.281a1 1 0 0 0-1.008 0L7.583 20.8c-.764.446-1.688-.248-1.474-1.106l1.03-4.119A1 1 0 0 0 6.8 14.56l-3.33-2.723c-.698-.571-.342-1.702.557-1.771l4.462-.342a1 1 0 0 0 .84-.597l1.753-4.022Z"/>
+        </svg>
+        <div id="star-count" class="font-semibold text-sm text-center text-gray-700 dark:text-gray-300">0</div>
+      </div>
+      <div class="opacity-70 ">&copy; waiyannaing. All rights reversed.</div>
+  </footer>
   </main>
+  
   <script src="script.js"></script>
 </body>
 </html>

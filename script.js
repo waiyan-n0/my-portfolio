@@ -144,3 +144,31 @@ async function startTypingEffect(lang = 'en') {
     console.log("Typing Effect Error:", err);
   }
 }
+
+const starBox = document.getElementById('star-box');
+const starCount = document.getElementById('star-count');
+const starSvg = starBox.querySelector('svg');
+
+let totalStars = parseInt(localStorage.getItem('totalStars')) || 0;
+let hasStarred = localStorage.getItem('hasStarred') === 'true';
+
+starCount.textContent = totalStars;
+
+if (hasStarred) {
+  starSvg.classList.add('starred');
+  starBox.style.cursor = 'default';
+}
+
+starBox.addEventListener('click', () => {
+  if (hasStarred) return;
+
+  totalStars++;
+  localStorage.setItem('totalStars', totalStars);
+  starCount.textContent = totalStars;
+
+  hasStarred = true;
+  localStorage.setItem('hasStarred', 'true');
+
+  starSvg.classList.add('starred');
+  starBox.style.cursor = 'default';
+});

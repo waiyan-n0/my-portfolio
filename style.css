@@ -97,21 +97,50 @@ body {
     }
 }
 
-.child-scroll{
-    animation: scrollAnimation 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0%;
+.child-scroll {
+  opacity: 0;
+  animation: scrollAnimation linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
+
 @keyframes scrollAnimation {
-    from{
-        opacity: 0;
-        scale: 0.4;
-    }
-    to{
-        opacity: 1;
-        scale: 100%;
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
+.footer-scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: footerfadeInUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 20%;
+}
+
+@keyframes footerfadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.starred {
+  fill: white;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+
+
+
 
 
 
